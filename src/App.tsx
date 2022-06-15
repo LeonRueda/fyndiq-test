@@ -1,10 +1,16 @@
+import { ArticlesContainer, Title } from "./components"
+import GlobalStyle from "./theme/globalStyle"
+import { Fragment } from "react"
 
 function App() {
   return (
-    <div>
-      <h3>Fyndiq test</h3>
-      List of articles goes here 😎
-    </div>
+    <Fragment>
+      <GlobalStyle />
+      <main>
+        <Title main>Fyndiq test</Title>
+        <ArticlesContainer />
+      </main>
+    </Fragment>
   );
 }
 
